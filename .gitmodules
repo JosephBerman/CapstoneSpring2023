@@ -2,3 +2,6 @@
 	path = pico-sdk
 	url = https://github.com/raspberrypi/pico-sdk.git
 
+[submodule "include/DHT20-Pico"]
+	path = include/DHT20-Pico
+	url = git@github.com:JosephBerman/DHT20-Pico.git

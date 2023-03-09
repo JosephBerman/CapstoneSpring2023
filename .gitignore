@@ -1,1 +1,15 @@
 .idea/
+cmake-build-debug/
+CMakeFiles
+elf2uf2
+generated
+CMakeCache.txt
+pioasm
+include/pico-sdk
+*.hex
+*.uf2
+*.bin
+*.dis
+*.map
+*.elf
+.DS_Store
