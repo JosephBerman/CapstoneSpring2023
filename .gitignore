@@ -13,3 +13,5 @@ include/pico-sdk
 *.map
 *.elf
 .DS_Store
+Makefile
+picosdk.txt

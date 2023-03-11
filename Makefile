@@ -130,6 +130,19 @@ dht/fast:
 .PHONY : dht/fast
 
 #=============================================================================
+# Target rules for targets named udp
+
+# Build rule for target.
+udp: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 udp
+.PHONY : udp
+
+# fast build rule for target.
+udp/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/build
+.PHONY : udp/fast
+
+#=============================================================================
 # Target rules for targets named ELF2UF2Build
 
 # Build rule for target.
@@ -231,12 +244,2173 @@ include/DHT20-Pico/DHT20.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/include/DHT20-Pico/DHT20.cpp.s
 .PHONY : include/DHT20-Pico/DHT20.cpp.s
 
+include/udpBeacon/udpBeacon.obj: include/udpBeacon/udpBeacon.c.obj
+.PHONY : include/udpBeacon/udpBeacon.obj
+
+# target to build an object file
+include/udpBeacon/udpBeacon.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/include/udpBeacon/udpBeacon.c.obj
+.PHONY : include/udpBeacon/udpBeacon.c.obj
+
+include/udpBeacon/udpBeacon.i: include/udpBeacon/udpBeacon.c.i
+.PHONY : include/udpBeacon/udpBeacon.i
+
+# target to preprocess a source file
+include/udpBeacon/udpBeacon.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/include/udpBeacon/udpBeacon.c.i
+.PHONY : include/udpBeacon/udpBeacon.c.i
+
+include/udpBeacon/udpBeacon.s: include/udpBeacon/udpBeacon.c.s
+.PHONY : include/udpBeacon/udpBeacon.s
+
+# target to generate assembly for a file
+include/udpBeacon/udpBeacon.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/include/udpBeacon/udpBeacon.c.s
+.PHONY : include/udpBeacon/udpBeacon.c.s
+
+pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj: pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj
+
+# target to build an object file
+pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.obj
+
+pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i: pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i
+
+# target to preprocess a source file
+pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.i
+
+pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s: pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s
+
+# target to generate assembly for a file
+pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.c.s
+
+pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj: pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj
+
+# target to build an object file
+pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.obj
+
+pico-sdk/lib/cyw43-driver/src/cyw43_ll.i: pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.i
+
+# target to preprocess a source file
+pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.i
+
+pico-sdk/lib/cyw43-driver/src/cyw43_ll.s: pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.s
+
+# target to generate assembly for a file
+pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_ll.c.s
+
+pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj: pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj
+
+# target to build an object file
+pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.obj
+
+pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i: pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i
+
+# target to preprocess a source file
+pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.i
+
+pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s: pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s
+
+# target to generate assembly for a file
+pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_lwip.c.s
+
+pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj: pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj
+
+# target to build an object file
+pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.obj
+
+pico-sdk/lib/cyw43-driver/src/cyw43_stats.i: pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.i
+
+# target to preprocess a source file
+pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.i
+
+pico-sdk/lib/cyw43-driver/src/cyw43_stats.s: pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.s
+
+# target to generate assembly for a file
+pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+.PHONY : pico-sdk/lib/cyw43-driver/src/cyw43_stats.c.s
+
+pico-sdk/lib/lwip/src/api/api_lib.obj: pico-sdk/lib/lwip/src/api/api_lib.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/api_lib.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/api_lib.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/api_lib.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/api_lib.c.obj
+
+pico-sdk/lib/lwip/src/api/api_lib.i: pico-sdk/lib/lwip/src/api/api_lib.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/api_lib.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/api_lib.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/api_lib.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/api_lib.c.i
+
+pico-sdk/lib/lwip/src/api/api_lib.s: pico-sdk/lib/lwip/src/api/api_lib.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/api_lib.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/api_lib.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/api_lib.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/api_lib.c.s
+
+pico-sdk/lib/lwip/src/api/api_msg.obj: pico-sdk/lib/lwip/src/api/api_msg.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/api_msg.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/api_msg.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/api_msg.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/api_msg.c.obj
+
+pico-sdk/lib/lwip/src/api/api_msg.i: pico-sdk/lib/lwip/src/api/api_msg.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/api_msg.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/api_msg.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/api_msg.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/api_msg.c.i
+
+pico-sdk/lib/lwip/src/api/api_msg.s: pico-sdk/lib/lwip/src/api/api_msg.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/api_msg.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/api_msg.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/api_msg.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/api_msg.c.s
+
+pico-sdk/lib/lwip/src/api/err.obj: pico-sdk/lib/lwip/src/api/err.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/err.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/err.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/err.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/err.c.obj
+
+pico-sdk/lib/lwip/src/api/err.i: pico-sdk/lib/lwip/src/api/err.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/err.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/err.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/err.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/err.c.i
+
+pico-sdk/lib/lwip/src/api/err.s: pico-sdk/lib/lwip/src/api/err.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/err.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/err.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/err.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/err.c.s
+
+pico-sdk/lib/lwip/src/api/if_api.obj: pico-sdk/lib/lwip/src/api/if_api.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/if_api.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/if_api.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/if_api.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/if_api.c.obj
+
+pico-sdk/lib/lwip/src/api/if_api.i: pico-sdk/lib/lwip/src/api/if_api.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/if_api.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/if_api.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/if_api.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/if_api.c.i
+
+pico-sdk/lib/lwip/src/api/if_api.s: pico-sdk/lib/lwip/src/api/if_api.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/if_api.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/if_api.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/if_api.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/if_api.c.s
+
+pico-sdk/lib/lwip/src/api/netbuf.obj: pico-sdk/lib/lwip/src/api/netbuf.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/netbuf.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/netbuf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netbuf.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/netbuf.c.obj
+
+pico-sdk/lib/lwip/src/api/netbuf.i: pico-sdk/lib/lwip/src/api/netbuf.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/netbuf.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/netbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netbuf.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/netbuf.c.i
+
+pico-sdk/lib/lwip/src/api/netbuf.s: pico-sdk/lib/lwip/src/api/netbuf.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/netbuf.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/netbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netbuf.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/netbuf.c.s
+
+pico-sdk/lib/lwip/src/api/netdb.obj: pico-sdk/lib/lwip/src/api/netdb.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/netdb.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/netdb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netdb.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/netdb.c.obj
+
+pico-sdk/lib/lwip/src/api/netdb.i: pico-sdk/lib/lwip/src/api/netdb.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/netdb.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/netdb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netdb.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/netdb.c.i
+
+pico-sdk/lib/lwip/src/api/netdb.s: pico-sdk/lib/lwip/src/api/netdb.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/netdb.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/netdb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netdb.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/netdb.c.s
+
+pico-sdk/lib/lwip/src/api/netifapi.obj: pico-sdk/lib/lwip/src/api/netifapi.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/netifapi.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/netifapi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netifapi.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/netifapi.c.obj
+
+pico-sdk/lib/lwip/src/api/netifapi.i: pico-sdk/lib/lwip/src/api/netifapi.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/netifapi.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/netifapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netifapi.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/netifapi.c.i
+
+pico-sdk/lib/lwip/src/api/netifapi.s: pico-sdk/lib/lwip/src/api/netifapi.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/netifapi.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/netifapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/netifapi.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/netifapi.c.s
+
+pico-sdk/lib/lwip/src/api/sockets.obj: pico-sdk/lib/lwip/src/api/sockets.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/sockets.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/sockets.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/sockets.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/sockets.c.obj
+
+pico-sdk/lib/lwip/src/api/sockets.i: pico-sdk/lib/lwip/src/api/sockets.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/sockets.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/sockets.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/sockets.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/sockets.c.i
+
+pico-sdk/lib/lwip/src/api/sockets.s: pico-sdk/lib/lwip/src/api/sockets.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/sockets.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/sockets.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/sockets.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/sockets.c.s
+
+pico-sdk/lib/lwip/src/api/tcpip.obj: pico-sdk/lib/lwip/src/api/tcpip.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/tcpip.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/api/tcpip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/tcpip.c.obj
+.PHONY : pico-sdk/lib/lwip/src/api/tcpip.c.obj
+
+pico-sdk/lib/lwip/src/api/tcpip.i: pico-sdk/lib/lwip/src/api/tcpip.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/tcpip.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/api/tcpip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/tcpip.c.i
+.PHONY : pico-sdk/lib/lwip/src/api/tcpip.c.i
+
+pico-sdk/lib/lwip/src/api/tcpip.s: pico-sdk/lib/lwip/src/api/tcpip.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/tcpip.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/api/tcpip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/api/tcpip.c.s
+.PHONY : pico-sdk/lib/lwip/src/api/tcpip.c.s
+
+pico-sdk/lib/lwip/src/core/altcp.obj: pico-sdk/lib/lwip/src/core/altcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/altcp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/altcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/altcp.c.obj
+
+pico-sdk/lib/lwip/src/core/altcp.i: pico-sdk/lib/lwip/src/core/altcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/altcp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/altcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/altcp.c.i
+
+pico-sdk/lib/lwip/src/core/altcp.s: pico-sdk/lib/lwip/src/core/altcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/altcp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/altcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/altcp.c.s
+
+pico-sdk/lib/lwip/src/core/altcp_alloc.obj: pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.c.obj
+
+pico-sdk/lib/lwip/src/core/altcp_alloc.i: pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/altcp_alloc.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.c.i
+
+pico-sdk/lib/lwip/src/core/altcp_alloc.s: pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/altcp_alloc.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_alloc.c.s
+
+pico-sdk/lib/lwip/src/core/altcp_tcp.obj: pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.c.obj
+
+pico-sdk/lib/lwip/src/core/altcp_tcp.i: pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/altcp_tcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.c.i
+
+pico-sdk/lib/lwip/src/core/altcp_tcp.s: pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/altcp_tcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/altcp_tcp.c.s
+
+pico-sdk/lib/lwip/src/core/def.obj: pico-sdk/lib/lwip/src/core/def.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/def.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/def.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/def.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/def.c.obj
+
+pico-sdk/lib/lwip/src/core/def.i: pico-sdk/lib/lwip/src/core/def.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/def.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/def.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/def.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/def.c.i
+
+pico-sdk/lib/lwip/src/core/def.s: pico-sdk/lib/lwip/src/core/def.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/def.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/def.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/def.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/def.c.s
+
+pico-sdk/lib/lwip/src/core/dns.obj: pico-sdk/lib/lwip/src/core/dns.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/dns.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/dns.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/dns.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/dns.c.obj
+
+pico-sdk/lib/lwip/src/core/dns.i: pico-sdk/lib/lwip/src/core/dns.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/dns.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/dns.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/dns.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/dns.c.i
+
+pico-sdk/lib/lwip/src/core/dns.s: pico-sdk/lib/lwip/src/core/dns.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/dns.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/dns.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/dns.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/dns.c.s
+
+pico-sdk/lib/lwip/src/core/inet_chksum.obj: pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/inet_chksum.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.c.obj
+
+pico-sdk/lib/lwip/src/core/inet_chksum.i: pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/inet_chksum.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.c.i
+
+pico-sdk/lib/lwip/src/core/inet_chksum.s: pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/inet_chksum.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/inet_chksum.c.s
+
+pico-sdk/lib/lwip/src/core/init.obj: pico-sdk/lib/lwip/src/core/init.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/init.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/init.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/init.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/init.c.obj
+
+pico-sdk/lib/lwip/src/core/init.i: pico-sdk/lib/lwip/src/core/init.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/init.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/init.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/init.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/init.c.i
+
+pico-sdk/lib/lwip/src/core/init.s: pico-sdk/lib/lwip/src/core/init.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/init.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/init.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/init.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/init.c.s
+
+pico-sdk/lib/lwip/src/core/ip.obj: pico-sdk/lib/lwip/src/core/ip.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ip.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ip.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ip.c.obj
+
+pico-sdk/lib/lwip/src/core/ip.i: pico-sdk/lib/lwip/src/core/ip.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ip.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ip.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ip.c.i
+
+pico-sdk/lib/lwip/src/core/ip.s: pico-sdk/lib/lwip/src/core/ip.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ip.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ip.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ip.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/acd.obj: pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/acd.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/acd.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/acd.i: pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/acd.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/acd.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/acd.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/acd.s: pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/acd.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/acd.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/acd.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/autoip.obj: pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/autoip.i: pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/autoip.s: pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/autoip.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/dhcp.i: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/dhcp.s: pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/dhcp.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/etharp.obj: pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/etharp.i: pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/etharp.s: pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/etharp.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/icmp.obj: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/icmp.i: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/icmp.s: pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/icmp.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/igmp.obj: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/igmp.i: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/igmp.s: pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/igmp.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4.obj: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4.i: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4.s: pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj: pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i: pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s: pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.c.s
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj: pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i: pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.i
+
+pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s: pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj: pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i: pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s: pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/dhcp6.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj: pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/ethip6.i: pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ethip6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/ethip6.s: pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ethip6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ethip6.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj: pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/icmp6.i: pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/icmp6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/icmp6.s: pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/icmp6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/icmp6.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/inet6.obj: pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/inet6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/inet6.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/inet6.i: pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/inet6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/inet6.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/inet6.s: pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/inet6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/inet6.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6.obj: pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6.i: pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6.s: pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj: pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i: pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s: pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj: pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i: pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s: pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/mld6.obj: pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/mld6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/mld6.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/mld6.i: pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/mld6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/mld6.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/mld6.s: pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/mld6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/mld6.c.s
+
+pico-sdk/lib/lwip/src/core/ipv6/nd6.obj: pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/nd6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/nd6.c.obj
+
+pico-sdk/lib/lwip/src/core/ipv6/nd6.i: pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/nd6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/nd6.c.i
+
+pico-sdk/lib/lwip/src/core/ipv6/nd6.s: pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/nd6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/ipv6/nd6.c.s
+
+pico-sdk/lib/lwip/src/core/mem.obj: pico-sdk/lib/lwip/src/core/mem.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/mem.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/mem.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/mem.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/mem.c.obj
+
+pico-sdk/lib/lwip/src/core/mem.i: pico-sdk/lib/lwip/src/core/mem.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/mem.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/mem.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/mem.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/mem.c.i
+
+pico-sdk/lib/lwip/src/core/mem.s: pico-sdk/lib/lwip/src/core/mem.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/mem.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/mem.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/mem.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/mem.c.s
+
+pico-sdk/lib/lwip/src/core/memp.obj: pico-sdk/lib/lwip/src/core/memp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/memp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/memp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/memp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/memp.c.obj
+
+pico-sdk/lib/lwip/src/core/memp.i: pico-sdk/lib/lwip/src/core/memp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/memp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/memp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/memp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/memp.c.i
+
+pico-sdk/lib/lwip/src/core/memp.s: pico-sdk/lib/lwip/src/core/memp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/memp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/memp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/memp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/memp.c.s
+
+pico-sdk/lib/lwip/src/core/netif.obj: pico-sdk/lib/lwip/src/core/netif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/netif.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/netif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/netif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/netif.c.obj
+
+pico-sdk/lib/lwip/src/core/netif.i: pico-sdk/lib/lwip/src/core/netif.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/netif.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/netif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/netif.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/netif.c.i
+
+pico-sdk/lib/lwip/src/core/netif.s: pico-sdk/lib/lwip/src/core/netif.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/netif.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/netif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/netif.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/netif.c.s
+
+pico-sdk/lib/lwip/src/core/pbuf.obj: pico-sdk/lib/lwip/src/core/pbuf.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/pbuf.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/pbuf.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/pbuf.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/pbuf.c.obj
+
+pico-sdk/lib/lwip/src/core/pbuf.i: pico-sdk/lib/lwip/src/core/pbuf.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/pbuf.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/pbuf.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/pbuf.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/pbuf.c.i
+
+pico-sdk/lib/lwip/src/core/pbuf.s: pico-sdk/lib/lwip/src/core/pbuf.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/pbuf.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/pbuf.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/pbuf.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/pbuf.c.s
+
+pico-sdk/lib/lwip/src/core/raw.obj: pico-sdk/lib/lwip/src/core/raw.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/raw.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/raw.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/raw.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/raw.c.obj
+
+pico-sdk/lib/lwip/src/core/raw.i: pico-sdk/lib/lwip/src/core/raw.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/raw.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/raw.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/raw.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/raw.c.i
+
+pico-sdk/lib/lwip/src/core/raw.s: pico-sdk/lib/lwip/src/core/raw.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/raw.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/raw.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/raw.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/raw.c.s
+
+pico-sdk/lib/lwip/src/core/stats.obj: pico-sdk/lib/lwip/src/core/stats.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/stats.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/stats.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/stats.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/stats.c.obj
+
+pico-sdk/lib/lwip/src/core/stats.i: pico-sdk/lib/lwip/src/core/stats.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/stats.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/stats.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/stats.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/stats.c.i
+
+pico-sdk/lib/lwip/src/core/stats.s: pico-sdk/lib/lwip/src/core/stats.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/stats.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/stats.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/stats.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/stats.c.s
+
+pico-sdk/lib/lwip/src/core/sys.obj: pico-sdk/lib/lwip/src/core/sys.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/sys.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/sys.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/sys.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/sys.c.obj
+
+pico-sdk/lib/lwip/src/core/sys.i: pico-sdk/lib/lwip/src/core/sys.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/sys.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/sys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/sys.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/sys.c.i
+
+pico-sdk/lib/lwip/src/core/sys.s: pico-sdk/lib/lwip/src/core/sys.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/sys.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/sys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/sys.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/sys.c.s
+
+pico-sdk/lib/lwip/src/core/tcp.obj: pico-sdk/lib/lwip/src/core/tcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/tcp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/tcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/tcp.c.obj
+
+pico-sdk/lib/lwip/src/core/tcp.i: pico-sdk/lib/lwip/src/core/tcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/tcp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/tcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/tcp.c.i
+
+pico-sdk/lib/lwip/src/core/tcp.s: pico-sdk/lib/lwip/src/core/tcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/tcp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/tcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/tcp.c.s
+
+pico-sdk/lib/lwip/src/core/tcp_in.obj: pico-sdk/lib/lwip/src/core/tcp_in.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_in.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/tcp_in.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_in.c.obj
+
+pico-sdk/lib/lwip/src/core/tcp_in.i: pico-sdk/lib/lwip/src/core/tcp_in.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_in.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/tcp_in.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_in.c.i
+
+pico-sdk/lib/lwip/src/core/tcp_in.s: pico-sdk/lib/lwip/src/core/tcp_in.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_in.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/tcp_in.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp_in.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_in.c.s
+
+pico-sdk/lib/lwip/src/core/tcp_out.obj: pico-sdk/lib/lwip/src/core/tcp_out.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_out.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/tcp_out.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_out.c.obj
+
+pico-sdk/lib/lwip/src/core/tcp_out.i: pico-sdk/lib/lwip/src/core/tcp_out.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_out.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/tcp_out.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_out.c.i
+
+pico-sdk/lib/lwip/src/core/tcp_out.s: pico-sdk/lib/lwip/src/core/tcp_out.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_out.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/tcp_out.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/tcp_out.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/tcp_out.c.s
+
+pico-sdk/lib/lwip/src/core/timeouts.obj: pico-sdk/lib/lwip/src/core/timeouts.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/timeouts.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/timeouts.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/timeouts.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/timeouts.c.obj
+
+pico-sdk/lib/lwip/src/core/timeouts.i: pico-sdk/lib/lwip/src/core/timeouts.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/timeouts.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/timeouts.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/timeouts.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/timeouts.c.i
+
+pico-sdk/lib/lwip/src/core/timeouts.s: pico-sdk/lib/lwip/src/core/timeouts.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/timeouts.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/timeouts.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/timeouts.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/timeouts.c.s
+
+pico-sdk/lib/lwip/src/core/udp.obj: pico-sdk/lib/lwip/src/core/udp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/udp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/core/udp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/udp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/core/udp.c.obj
+
+pico-sdk/lib/lwip/src/core/udp.i: pico-sdk/lib/lwip/src/core/udp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/udp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/core/udp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/udp.c.i
+.PHONY : pico-sdk/lib/lwip/src/core/udp.c.i
+
+pico-sdk/lib/lwip/src/core/udp.s: pico-sdk/lib/lwip/src/core/udp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/udp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/core/udp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/core/udp.c.s
+.PHONY : pico-sdk/lib/lwip/src/core/udp.c.s
+
+pico-sdk/lib/lwip/src/netif/bridgeif.obj: pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/bridgeif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif.c.obj
+
+pico-sdk/lib/lwip/src/netif/bridgeif.i: pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/bridgeif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif.c.i
+
+pico-sdk/lib/lwip/src/netif/bridgeif.s: pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/bridgeif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif.c.s
+
+pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj: pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.obj
+
+pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i: pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.i
+
+pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s: pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/bridgeif_fdb.c.s
+
+pico-sdk/lib/lwip/src/netif/ethernet.obj: pico-sdk/lib/lwip/src/netif/ethernet.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ethernet.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ethernet.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ethernet.c.obj
+
+pico-sdk/lib/lwip/src/netif/ethernet.i: pico-sdk/lib/lwip/src/netif/ethernet.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ethernet.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ethernet.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ethernet.c.i
+
+pico-sdk/lib/lwip/src/netif/ethernet.s: pico-sdk/lib/lwip/src/netif/ethernet.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ethernet.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ethernet.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ethernet.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ethernet.c.s
+
+pico-sdk/lib/lwip/src/netif/lowpan6.obj: pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/lowpan6.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6.c.obj
+
+pico-sdk/lib/lwip/src/netif/lowpan6.i: pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/lowpan6.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6.c.i
+
+pico-sdk/lib/lwip/src/netif/lowpan6.s: pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/lowpan6.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6.c.s
+
+pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj: pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.obj
+
+pico-sdk/lib/lwip/src/netif/lowpan6_ble.i: pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_ble.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.i
+
+pico-sdk/lib/lwip/src/netif/lowpan6_ble.s: pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_ble.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_ble.c.s
+
+pico-sdk/lib/lwip/src/netif/lowpan6_common.obj: pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_common.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_common.c.obj
+
+pico-sdk/lib/lwip/src/netif/lowpan6_common.i: pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_common.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_common.c.i
+
+pico-sdk/lib/lwip/src/netif/lowpan6_common.s: pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_common.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/lowpan6_common.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/auth.obj: pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/auth.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/auth.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/auth.i: pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/auth.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/auth.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/auth.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/auth.s: pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/auth.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/auth.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/auth.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/ccp.obj: pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ccp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ccp.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/ccp.i: pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ccp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ccp.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/ccp.s: pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ccp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ccp.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj: pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i: pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s: pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-md5.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj: pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/chap-new.i: pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-new.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/chap-new.s: pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-new.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap-new.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj: pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i: pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s: pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/chap_ms.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/demand.obj: pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/demand.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/demand.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/demand.i: pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/demand.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/demand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/demand.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/demand.s: pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/demand.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/demand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/demand.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/eap.obj: pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eap.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eap.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/eap.i: pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eap.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/eap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eap.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/eap.s: pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eap.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/eap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eap.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/ecp.obj: pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ecp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ecp.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/ecp.i: pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ecp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ecp.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/ecp.s: pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ecp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ecp.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/eui64.obj: pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eui64.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eui64.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/eui64.i: pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eui64.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eui64.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/eui64.s: pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eui64.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/eui64.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/fsm.obj: pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/fsm.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/fsm.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/fsm.i: pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/fsm.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/fsm.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/fsm.s: pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/fsm.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/fsm.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj: pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/ipcp.i: pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipcp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/ipcp.s: pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipcp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipcp.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj: pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i: pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s: pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/lcp.obj: pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/lcp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/lcp.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/lcp.i: pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/lcp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/lcp.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/lcp.s: pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/lcp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/lcp.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/magic.obj: pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/magic.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/magic.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/magic.i: pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/magic.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/magic.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/magic.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/magic.s: pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/magic.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/magic.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/magic.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/mppe.obj: pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/mppe.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/mppe.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/mppe.i: pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/mppe.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/mppe.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/mppe.s: pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/mppe.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/mppe.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/multilink.obj: pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/multilink.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/multilink.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/multilink.i: pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/multilink.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/multilink.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/multilink.s: pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/multilink.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/multilink.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj: pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i: pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s: pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj: pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i: pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s: pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj: pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i: pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s: pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj: pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i: pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s: pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj: pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i: pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s: pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/ppp.obj: pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ppp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ppp.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/ppp.i: pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ppp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ppp.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/ppp.s: pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ppp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/ppp.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj: pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/pppapi.i: pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppapi.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/pppapi.s: pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppapi.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppapi.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj: pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i: pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s: pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj: pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/pppoe.i: pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppoe.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/pppoe.s: pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppoe.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppoe.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj: pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i: pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s: pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/pppos.obj: pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppos.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppos.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/pppos.i: pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppos.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppos.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/pppos.s: pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppos.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/pppos.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/upap.obj: pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/upap.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/upap.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/upap.i: pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/upap.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/upap.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/upap.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/upap.s: pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/upap.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/upap.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/upap.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/utils.obj: pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/utils.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/utils.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/utils.i: pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/utils.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/utils.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/utils.s: pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/utils.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/utils.c.s
+
+pico-sdk/lib/lwip/src/netif/ppp/vj.obj: pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/vj.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/vj.c.obj
+
+pico-sdk/lib/lwip/src/netif/ppp/vj.i: pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/vj.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/ppp/vj.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/vj.c.i
+
+pico-sdk/lib/lwip/src/netif/ppp/vj.s: pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/vj.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/ppp/vj.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/ppp/vj.c.s
+
+pico-sdk/lib/lwip/src/netif/slipif.obj: pico-sdk/lib/lwip/src/netif/slipif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/slipif.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/slipif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/slipif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/slipif.c.obj
+
+pico-sdk/lib/lwip/src/netif/slipif.i: pico-sdk/lib/lwip/src/netif/slipif.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/slipif.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/slipif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/slipif.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/slipif.c.i
+
+pico-sdk/lib/lwip/src/netif/slipif.s: pico-sdk/lib/lwip/src/netif/slipif.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/slipif.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/slipif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/slipif.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/slipif.c.s
+
+pico-sdk/lib/lwip/src/netif/zepif.obj: pico-sdk/lib/lwip/src/netif/zepif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/zepif.obj
+
+# target to build an object file
+pico-sdk/lib/lwip/src/netif/zepif.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/zepif.c.obj
+.PHONY : pico-sdk/lib/lwip/src/netif/zepif.c.obj
+
+pico-sdk/lib/lwip/src/netif/zepif.i: pico-sdk/lib/lwip/src/netif/zepif.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/zepif.i
+
+# target to preprocess a source file
+pico-sdk/lib/lwip/src/netif/zepif.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/zepif.c.i
+.PHONY : pico-sdk/lib/lwip/src/netif/zepif.c.i
+
+pico-sdk/lib/lwip/src/netif/zepif.s: pico-sdk/lib/lwip/src/netif/zepif.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/zepif.s
+
+# target to generate assembly for a file
+pico-sdk/lib/lwip/src/netif/zepif.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/lwip/src/netif/zepif.c.s
+.PHONY : pico-sdk/lib/lwip/src/netif/zepif.c.s
+
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
 
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
@@ -245,6 +2419,7 @@ pico-sdk/lib/tinyusb/src/class/audio/audio_device.i: pico-sdk/lib/tinyusb/src/cl
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
@@ -253,6 +2428,7 @@ pico-sdk/lib/tinyusb/src/class/audio/audio_device.s: pico-sdk/lib/tinyusb/src/cl
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
@@ -261,6 +2437,7 @@ pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.obj: pico-sdk/lib/tinyusb/src/clas
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
@@ -269,6 +2446,7 @@ pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.i: pico-sdk/lib/tinyusb/src/class/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
@@ -277,6 +2455,7 @@ pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.s: pico-sdk/lib/tinyusb/src/class/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
@@ -285,6 +2464,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.obj: pico-sdk/lib/tinyusb/src/clas
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
@@ -293,6 +2473,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.i: pico-sdk/lib/tinyusb/src/class/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
@@ -301,6 +2482,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.s: pico-sdk/lib/tinyusb/src/class/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
@@ -309,6 +2491,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.obj: pico-sdk/lib/tinyusb/src/c
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
@@ -317,6 +2500,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.i: pico-sdk/lib/tinyusb/src/cla
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
@@ -325,6 +2509,7 @@ pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.s: pico-sdk/lib/tinyusb/src/cla
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/dfu/dfu_rt_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
@@ -333,6 +2518,7 @@ pico-sdk/lib/tinyusb/src/class/hid/hid_device.obj: pico-sdk/lib/tinyusb/src/clas
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
@@ -341,6 +2527,7 @@ pico-sdk/lib/tinyusb/src/class/hid/hid_device.i: pico-sdk/lib/tinyusb/src/class/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
@@ -349,6 +2536,7 @@ pico-sdk/lib/tinyusb/src/class/hid/hid_device.s: pico-sdk/lib/tinyusb/src/class/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/hid/hid_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
@@ -357,6 +2545,7 @@ pico-sdk/lib/tinyusb/src/class/midi/midi_device.obj: pico-sdk/lib/tinyusb/src/cl
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
@@ -365,6 +2554,7 @@ pico-sdk/lib/tinyusb/src/class/midi/midi_device.i: pico-sdk/lib/tinyusb/src/clas
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
@@ -373,6 +2563,7 @@ pico-sdk/lib/tinyusb/src/class/midi/midi_device.s: pico-sdk/lib/tinyusb/src/clas
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/midi/midi_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
@@ -381,6 +2572,7 @@ pico-sdk/lib/tinyusb/src/class/msc/msc_device.obj: pico-sdk/lib/tinyusb/src/clas
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
@@ -389,6 +2581,7 @@ pico-sdk/lib/tinyusb/src/class/msc/msc_device.i: pico-sdk/lib/tinyusb/src/class/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
@@ -397,6 +2590,7 @@ pico-sdk/lib/tinyusb/src/class/msc/msc_device.s: pico-sdk/lib/tinyusb/src/class/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/msc/msc_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
@@ -405,6 +2599,7 @@ pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.obj: pico-sdk/lib/tinyusb/sr
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
@@ -413,6 +2608,7 @@ pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.i: pico-sdk/lib/tinyusb/src/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
@@ -421,6 +2617,7 @@ pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.s: pico-sdk/lib/tinyusb/src/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
@@ -429,6 +2626,7 @@ pico-sdk/lib/tinyusb/src/class/net/ncm_device.obj: pico-sdk/lib/tinyusb/src/clas
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
@@ -437,6 +2635,7 @@ pico-sdk/lib/tinyusb/src/class/net/ncm_device.i: pico-sdk/lib/tinyusb/src/class/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
@@ -445,6 +2644,7 @@ pico-sdk/lib/tinyusb/src/class/net/ncm_device.s: pico-sdk/lib/tinyusb/src/class/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/net/ncm_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
@@ -453,6 +2653,7 @@ pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.obj: pico-sdk/lib/tinyusb/sr
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
@@ -461,6 +2662,7 @@ pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.i: pico-sdk/lib/tinyusb/src/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
@@ -469,6 +2671,7 @@ pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.s: pico-sdk/lib/tinyusb/src/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/usbtmc/usbtmc_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
@@ -477,6 +2680,7 @@ pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.obj: pico-sdk/lib/tinyusb/sr
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
@@ -485,6 +2689,7 @@ pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.i: pico-sdk/lib/tinyusb/src/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
@@ -493,6 +2698,7 @@ pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.s: pico-sdk/lib/tinyusb/src/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/vendor/vendor_device.c.s
 
 pico-sdk/lib/tinyusb/src/class/video/video_device.obj: pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
@@ -501,6 +2707,7 @@ pico-sdk/lib/tinyusb/src/class/video/video_device.obj: pico-sdk/lib/tinyusb/src/
 # target to build an object file
 pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/class/video/video_device.c.obj
 
 pico-sdk/lib/tinyusb/src/class/video/video_device.i: pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
@@ -509,6 +2716,7 @@ pico-sdk/lib/tinyusb/src/class/video/video_device.i: pico-sdk/lib/tinyusb/src/cl
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/class/video/video_device.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/class/video/video_device.c.i
 
 pico-sdk/lib/tinyusb/src/class/video/video_device.s: pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
@@ -517,6 +2725,7 @@ pico-sdk/lib/tinyusb/src/class/video/video_device.s: pico-sdk/lib/tinyusb/src/cl
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/class/video/video_device.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/class/video/video_device.c.s
 
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
@@ -525,6 +2734,7 @@ pico-sdk/lib/tinyusb/src/common/tusb_fifo.obj: pico-sdk/lib/tinyusb/src/common/t
 # target to build an object file
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
@@ -533,6 +2743,7 @@ pico-sdk/lib/tinyusb/src/common/tusb_fifo.i: pico-sdk/lib/tinyusb/src/common/tus
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.i
 
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
@@ -541,6 +2752,7 @@ pico-sdk/lib/tinyusb/src/common/tusb_fifo.s: pico-sdk/lib/tinyusb/src/common/tus
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.s
 
 pico-sdk/lib/tinyusb/src/device/usbd.obj: pico-sdk/lib/tinyusb/src/device/usbd.c.obj
@@ -549,6 +2761,7 @@ pico-sdk/lib/tinyusb/src/device/usbd.obj: pico-sdk/lib/tinyusb/src/device/usbd.c
 # target to build an object file
 pico-sdk/lib/tinyusb/src/device/usbd.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd.c.obj
 
 pico-sdk/lib/tinyusb/src/device/usbd.i: pico-sdk/lib/tinyusb/src/device/usbd.c.i
@@ -557,6 +2770,7 @@ pico-sdk/lib/tinyusb/src/device/usbd.i: pico-sdk/lib/tinyusb/src/device/usbd.c.i
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/device/usbd.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd.c.i
 
 pico-sdk/lib/tinyusb/src/device/usbd.s: pico-sdk/lib/tinyusb/src/device/usbd.c.s
@@ -565,6 +2779,7 @@ pico-sdk/lib/tinyusb/src/device/usbd.s: pico-sdk/lib/tinyusb/src/device/usbd.c.s
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/device/usbd.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/device/usbd.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd.c.s
 
 pico-sdk/lib/tinyusb/src/device/usbd_control.obj: pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
@@ -573,6 +2788,7 @@ pico-sdk/lib/tinyusb/src/device/usbd_control.obj: pico-sdk/lib/tinyusb/src/devic
 # target to build an object file
 pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
 
 pico-sdk/lib/tinyusb/src/device/usbd_control.i: pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
@@ -581,6 +2797,7 @@ pico-sdk/lib/tinyusb/src/device/usbd_control.i: pico-sdk/lib/tinyusb/src/device/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/device/usbd_control.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd_control.c.i
 
 pico-sdk/lib/tinyusb/src/device/usbd_control.s: pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
@@ -589,6 +2806,7 @@ pico-sdk/lib/tinyusb/src/device/usbd_control.s: pico-sdk/lib/tinyusb/src/device/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/device/usbd_control.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/device/usbd_control.c.s
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
@@ -597,6 +2815,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.obj: pico-sdk/li
 # target to build an object file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
@@ -605,6 +2824,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.i: pico-sdk/lib/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.i
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
@@ -613,6 +2833,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.s: pico-sdk/lib/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.s
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
@@ -621,6 +2842,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.obj: pico-sdk/li
 # target to build an object file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
@@ -629,6 +2851,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.i: pico-sdk/lib/
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.i
 
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
@@ -637,6 +2860,7 @@ pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.s: pico-sdk/lib/
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.s
 
 pico-sdk/lib/tinyusb/src/tusb.obj: pico-sdk/lib/tinyusb/src/tusb.c.obj
@@ -645,6 +2869,7 @@ pico-sdk/lib/tinyusb/src/tusb.obj: pico-sdk/lib/tinyusb/src/tusb.c.obj
 # target to build an object file
 pico-sdk/lib/tinyusb/src/tusb.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/tusb.c.obj
 .PHONY : pico-sdk/lib/tinyusb/src/tusb.c.obj
 
 pico-sdk/lib/tinyusb/src/tusb.i: pico-sdk/lib/tinyusb/src/tusb.c.i
@@ -653,6 +2878,7 @@ pico-sdk/lib/tinyusb/src/tusb.i: pico-sdk/lib/tinyusb/src/tusb.c.i
 # target to preprocess a source file
 pico-sdk/lib/tinyusb/src/tusb.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/tusb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/tusb.c.i
 .PHONY : pico-sdk/lib/tinyusb/src/tusb.c.i
 
 pico-sdk/lib/tinyusb/src/tusb.s: pico-sdk/lib/tinyusb/src/tusb.c.s
@@ -661,6 +2887,7 @@ pico-sdk/lib/tinyusb/src/tusb.s: pico-sdk/lib/tinyusb/src/tusb.c.s
 # target to generate assembly for a file
 pico-sdk/lib/tinyusb/src/tusb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/lib/tinyusb/src/tusb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/lib/tinyusb/src/tusb.c.s
 .PHONY : pico-sdk/lib/tinyusb/src/tusb.c.s
 
 pico-sdk/src/common/pico_sync/critical_section.obj: pico-sdk/src/common/pico_sync/critical_section.c.obj
@@ -669,6 +2896,7 @@ pico-sdk/src/common/pico_sync/critical_section.obj: pico-sdk/src/common/pico_syn
 # target to build an object file
 pico-sdk/src/common/pico_sync/critical_section.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 pico-sdk/src/common/pico_sync/critical_section.i: pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -677,6 +2905,7 @@ pico-sdk/src/common/pico_sync/critical_section.i: pico-sdk/src/common/pico_sync/
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/critical_section.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : pico-sdk/src/common/pico_sync/critical_section.c.i
 
 pico-sdk/src/common/pico_sync/critical_section.s: pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -685,6 +2914,7 @@ pico-sdk/src/common/pico_sync/critical_section.s: pico-sdk/src/common/pico_sync/
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/critical_section.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : pico-sdk/src/common/pico_sync/critical_section.c.s
 
 pico-sdk/src/common/pico_sync/lock_core.obj: pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -693,6 +2923,7 @@ pico-sdk/src/common/pico_sync/lock_core.obj: pico-sdk/src/common/pico_sync/lock_
 # target to build an object file
 pico-sdk/src/common/pico_sync/lock_core.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 pico-sdk/src/common/pico_sync/lock_core.i: pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -701,6 +2932,7 @@ pico-sdk/src/common/pico_sync/lock_core.i: pico-sdk/src/common/pico_sync/lock_co
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/lock_core.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : pico-sdk/src/common/pico_sync/lock_core.c.i
 
 pico-sdk/src/common/pico_sync/lock_core.s: pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -709,6 +2941,7 @@ pico-sdk/src/common/pico_sync/lock_core.s: pico-sdk/src/common/pico_sync/lock_co
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/lock_core.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : pico-sdk/src/common/pico_sync/lock_core.c.s
 
 pico-sdk/src/common/pico_sync/mutex.obj: pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -717,6 +2950,7 @@ pico-sdk/src/common/pico_sync/mutex.obj: pico-sdk/src/common/pico_sync/mutex.c.o
 # target to build an object file
 pico-sdk/src/common/pico_sync/mutex.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/mutex.c.obj
 
 pico-sdk/src/common/pico_sync/mutex.i: pico-sdk/src/common/pico_sync/mutex.c.i
@@ -725,6 +2959,7 @@ pico-sdk/src/common/pico_sync/mutex.i: pico-sdk/src/common/pico_sync/mutex.c.i
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/mutex.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : pico-sdk/src/common/pico_sync/mutex.c.i
 
 pico-sdk/src/common/pico_sync/mutex.s: pico-sdk/src/common/pico_sync/mutex.c.s
@@ -733,6 +2968,7 @@ pico-sdk/src/common/pico_sync/mutex.s: pico-sdk/src/common/pico_sync/mutex.c.s
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/mutex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : pico-sdk/src/common/pico_sync/mutex.c.s
 
 pico-sdk/src/common/pico_sync/sem.obj: pico-sdk/src/common/pico_sync/sem.c.obj
@@ -741,6 +2977,7 @@ pico-sdk/src/common/pico_sync/sem.obj: pico-sdk/src/common/pico_sync/sem.c.obj
 # target to build an object file
 pico-sdk/src/common/pico_sync/sem.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : pico-sdk/src/common/pico_sync/sem.c.obj
 
 pico-sdk/src/common/pico_sync/sem.i: pico-sdk/src/common/pico_sync/sem.c.i
@@ -749,6 +2986,7 @@ pico-sdk/src/common/pico_sync/sem.i: pico-sdk/src/common/pico_sync/sem.c.i
 # target to preprocess a source file
 pico-sdk/src/common/pico_sync/sem.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : pico-sdk/src/common/pico_sync/sem.c.i
 
 pico-sdk/src/common/pico_sync/sem.s: pico-sdk/src/common/pico_sync/sem.c.s
@@ -757,6 +2995,7 @@ pico-sdk/src/common/pico_sync/sem.s: pico-sdk/src/common/pico_sync/sem.c.s
 # target to generate assembly for a file
 pico-sdk/src/common/pico_sync/sem.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : pico-sdk/src/common/pico_sync/sem.c.s
 
 pico-sdk/src/common/pico_time/time.obj: pico-sdk/src/common/pico_time/time.c.obj
@@ -765,6 +3004,7 @@ pico-sdk/src/common/pico_time/time.obj: pico-sdk/src/common/pico_time/time.c.obj
 # target to build an object file
 pico-sdk/src/common/pico_time/time.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : pico-sdk/src/common/pico_time/time.c.obj
 
 pico-sdk/src/common/pico_time/time.i: pico-sdk/src/common/pico_time/time.c.i
@@ -773,6 +3013,7 @@ pico-sdk/src/common/pico_time/time.i: pico-sdk/src/common/pico_time/time.c.i
 # target to preprocess a source file
 pico-sdk/src/common/pico_time/time.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : pico-sdk/src/common/pico_time/time.c.i
 
 pico-sdk/src/common/pico_time/time.s: pico-sdk/src/common/pico_time/time.c.s
@@ -781,6 +3022,7 @@ pico-sdk/src/common/pico_time/time.s: pico-sdk/src/common/pico_time/time.c.s
 # target to generate assembly for a file
 pico-sdk/src/common/pico_time/time.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : pico-sdk/src/common/pico_time/time.c.s
 
 pico-sdk/src/common/pico_time/timeout_helper.obj: pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -789,6 +3031,7 @@ pico-sdk/src/common/pico_time/timeout_helper.obj: pico-sdk/src/common/pico_time/
 # target to build an object file
 pico-sdk/src/common/pico_time/timeout_helper.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 pico-sdk/src/common/pico_time/timeout_helper.i: pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -797,6 +3040,7 @@ pico-sdk/src/common/pico_time/timeout_helper.i: pico-sdk/src/common/pico_time/ti
 # target to preprocess a source file
 pico-sdk/src/common/pico_time/timeout_helper.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 pico-sdk/src/common/pico_time/timeout_helper.s: pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -805,6 +3049,7 @@ pico-sdk/src/common/pico_time/timeout_helper.s: pico-sdk/src/common/pico_time/ti
 # target to generate assembly for a file
 pico-sdk/src/common/pico_time/timeout_helper.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 pico-sdk/src/common/pico_util/datetime.obj: pico-sdk/src/common/pico_util/datetime.c.obj
@@ -813,6 +3058,7 @@ pico-sdk/src/common/pico_util/datetime.obj: pico-sdk/src/common/pico_util/dateti
 # target to build an object file
 pico-sdk/src/common/pico_util/datetime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : pico-sdk/src/common/pico_util/datetime.c.obj
 
 pico-sdk/src/common/pico_util/datetime.i: pico-sdk/src/common/pico_util/datetime.c.i
@@ -821,6 +3067,7 @@ pico-sdk/src/common/pico_util/datetime.i: pico-sdk/src/common/pico_util/datetime
 # target to preprocess a source file
 pico-sdk/src/common/pico_util/datetime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : pico-sdk/src/common/pico_util/datetime.c.i
 
 pico-sdk/src/common/pico_util/datetime.s: pico-sdk/src/common/pico_util/datetime.c.s
@@ -829,6 +3076,7 @@ pico-sdk/src/common/pico_util/datetime.s: pico-sdk/src/common/pico_util/datetime
 # target to generate assembly for a file
 pico-sdk/src/common/pico_util/datetime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : pico-sdk/src/common/pico_util/datetime.c.s
 
 pico-sdk/src/common/pico_util/pheap.obj: pico-sdk/src/common/pico_util/pheap.c.obj
@@ -837,6 +3085,7 @@ pico-sdk/src/common/pico_util/pheap.obj: pico-sdk/src/common/pico_util/pheap.c.o
 # target to build an object file
 pico-sdk/src/common/pico_util/pheap.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : pico-sdk/src/common/pico_util/pheap.c.obj
 
 pico-sdk/src/common/pico_util/pheap.i: pico-sdk/src/common/pico_util/pheap.c.i
@@ -845,6 +3094,7 @@ pico-sdk/src/common/pico_util/pheap.i: pico-sdk/src/common/pico_util/pheap.c.i
 # target to preprocess a source file
 pico-sdk/src/common/pico_util/pheap.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : pico-sdk/src/common/pico_util/pheap.c.i
 
 pico-sdk/src/common/pico_util/pheap.s: pico-sdk/src/common/pico_util/pheap.c.s
@@ -853,6 +3103,7 @@ pico-sdk/src/common/pico_util/pheap.s: pico-sdk/src/common/pico_util/pheap.c.s
 # target to generate assembly for a file
 pico-sdk/src/common/pico_util/pheap.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : pico-sdk/src/common/pico_util/pheap.c.s
 
 pico-sdk/src/common/pico_util/queue.obj: pico-sdk/src/common/pico_util/queue.c.obj
@@ -861,6 +3112,7 @@ pico-sdk/src/common/pico_util/queue.obj: pico-sdk/src/common/pico_util/queue.c.o
 # target to build an object file
 pico-sdk/src/common/pico_util/queue.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : pico-sdk/src/common/pico_util/queue.c.obj
 
 pico-sdk/src/common/pico_util/queue.i: pico-sdk/src/common/pico_util/queue.c.i
@@ -869,6 +3121,7 @@ pico-sdk/src/common/pico_util/queue.i: pico-sdk/src/common/pico_util/queue.c.i
 # target to preprocess a source file
 pico-sdk/src/common/pico_util/queue.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : pico-sdk/src/common/pico_util/queue.c.i
 
 pico-sdk/src/common/pico_util/queue.s: pico-sdk/src/common/pico_util/queue.c.s
@@ -877,31 +3130,8 @@ pico-sdk/src/common/pico_util/queue.s: pico-sdk/src/common/pico_util/queue.c.s
 # target to generate assembly for a file
 pico-sdk/src/common/pico_util/queue.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : pico-sdk/src/common/pico_util/queue.c.s
-
-pico-sdk/src/rp2_common/hardware_adc/adc.obj: pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.obj
-
-# target to build an object file
-pico-sdk/src/rp2_common/hardware_adc/adc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
-
-pico-sdk/src/rp2_common/hardware_adc/adc.i: pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.i
-
-# target to preprocess a source file
-pico-sdk/src/rp2_common/hardware_adc/adc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.c.i
-
-pico-sdk/src/rp2_common/hardware_adc/adc.s: pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.s
-
-# target to generate assembly for a file
-pico-sdk/src/rp2_common/hardware_adc/adc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_adc/adc.c.s
-.PHONY : pico-sdk/src/rp2_common/hardware_adc/adc.c.s
 
 pico-sdk/src/rp2_common/hardware_claim/claim.obj: pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.obj
@@ -909,6 +3139,7 @@ pico-sdk/src/rp2_common/hardware_claim/claim.obj: pico-sdk/src/rp2_common/hardwa
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 pico-sdk/src/rp2_common/hardware_claim/claim.i: pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -917,6 +3148,7 @@ pico-sdk/src/rp2_common/hardware_claim/claim.i: pico-sdk/src/rp2_common/hardware
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 pico-sdk/src/rp2_common/hardware_claim/claim.s: pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -925,6 +3157,7 @@ pico-sdk/src/rp2_common/hardware_claim/claim.s: pico-sdk/src/rp2_common/hardware
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -933,6 +3166,7 @@ pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: pico-sdk/src/rp2_common/hard
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 pico-sdk/src/rp2_common/hardware_clocks/clocks.i: pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -941,6 +3175,7 @@ pico-sdk/src/rp2_common/hardware_clocks/clocks.i: pico-sdk/src/rp2_common/hardwa
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 pico-sdk/src/rp2_common/hardware_clocks/clocks.s: pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -949,6 +3184,7 @@ pico-sdk/src/rp2_common/hardware_clocks/clocks.s: pico-sdk/src/rp2_common/hardwa
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 pico-sdk/src/rp2_common/hardware_divider/divider.obj: pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -957,7 +3193,56 @@ pico-sdk/src/rp2_common/hardware_divider/divider.obj: pico-sdk/src/rp2_common/ha
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+
+pico-sdk/src/rp2_common/hardware_dma/dma.obj: pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/hardware_dma/dma.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.c.obj
+
+pico-sdk/src/rp2_common/hardware_dma/dma.i: pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/hardware_dma/dma.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.c.i
+
+pico-sdk/src/rp2_common/hardware_dma/dma.s: pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/hardware_dma/dma.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_dma/dma.c.s
+
+pico-sdk/src/rp2_common/hardware_exception/exception.obj: pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/hardware_exception/exception.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.c.obj
+
+pico-sdk/src/rp2_common/hardware_exception/exception.i: pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/hardware_exception/exception.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.c.i
+
+pico-sdk/src/rp2_common/hardware_exception/exception.s: pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/hardware_exception/exception.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_exception/exception.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_exception/exception.c.s
 
 pico-sdk/src/rp2_common/hardware_flash/flash.obj: pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_flash/flash.obj
@@ -965,6 +3250,7 @@ pico-sdk/src/rp2_common/hardware_flash/flash.obj: pico-sdk/src/rp2_common/hardwa
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_flash/flash.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
 
 pico-sdk/src/rp2_common/hardware_flash/flash.i: pico-sdk/src/rp2_common/hardware_flash/flash.c.i
@@ -973,6 +3259,7 @@ pico-sdk/src/rp2_common/hardware_flash/flash.i: pico-sdk/src/rp2_common/hardware
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_flash/flash.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_flash/flash.c.i
 
 pico-sdk/src/rp2_common/hardware_flash/flash.s: pico-sdk/src/rp2_common/hardware_flash/flash.c.s
@@ -981,6 +3268,7 @@ pico-sdk/src/rp2_common/hardware_flash/flash.s: pico-sdk/src/rp2_common/hardware
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_flash/flash.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_flash/flash.c.s
 
 pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -989,6 +3277,7 @@ pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: pico-sdk/src/rp2_common/hardware
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 pico-sdk/src/rp2_common/hardware_gpio/gpio.i: pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -997,6 +3286,7 @@ pico-sdk/src/rp2_common/hardware_gpio/gpio.i: pico-sdk/src/rp2_common/hardware_g
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 pico-sdk/src/rp2_common/hardware_gpio/gpio.s: pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -1005,6 +3295,7 @@ pico-sdk/src/rp2_common/hardware_gpio/gpio.s: pico-sdk/src/rp2_common/hardware_g
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
@@ -1013,6 +3304,7 @@ pico-sdk/src/rp2_common/hardware_i2c/i2c.obj: pico-sdk/src/rp2_common/hardware_i
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
 
 pico-sdk/src/rp2_common/hardware_i2c/i2c.i: pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
@@ -1021,6 +3313,7 @@ pico-sdk/src/rp2_common/hardware_i2c/i2c.i: pico-sdk/src/rp2_common/hardware_i2c
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.c.i
 
 pico-sdk/src/rp2_common/hardware_i2c/i2c.s: pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
@@ -1029,6 +3322,7 @@ pico-sdk/src/rp2_common/hardware_i2c/i2c.s: pico-sdk/src/rp2_common/hardware_i2c
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_i2c/i2c.c.s
 
 pico-sdk/src/rp2_common/hardware_irq/irq.obj: pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -1037,6 +3331,7 @@ pico-sdk/src/rp2_common/hardware_irq/irq.obj: pico-sdk/src/rp2_common/hardware_i
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 pico-sdk/src/rp2_common/hardware_irq/irq.i: pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -1045,6 +3340,7 @@ pico-sdk/src/rp2_common/hardware_irq/irq.i: pico-sdk/src/rp2_common/hardware_irq
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 pico-sdk/src/rp2_common/hardware_irq/irq.s: pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -1053,6 +3349,7 @@ pico-sdk/src/rp2_common/hardware_irq/irq.s: pico-sdk/src/rp2_common/hardware_irq
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -1061,7 +3358,32 @@ pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: pico-sdk/src/rp2_com
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+
+pico-sdk/src/rp2_common/hardware_pio/pio.obj: pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+pico-sdk/src/rp2_common/hardware_pio/pio.i: pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+pico-sdk/src/rp2_common/hardware_pio/pio.s: pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 pico-sdk/src/rp2_common/hardware_pll/pll.obj: pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_pll/pll.obj
@@ -1069,6 +3391,7 @@ pico-sdk/src/rp2_common/hardware_pll/pll.obj: pico-sdk/src/rp2_common/hardware_p
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 pico-sdk/src/rp2_common/hardware_pll/pll.i: pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -1077,6 +3400,7 @@ pico-sdk/src/rp2_common/hardware_pll/pll.i: pico-sdk/src/rp2_common/hardware_pll
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 pico-sdk/src/rp2_common/hardware_pll/pll.s: pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -1085,6 +3409,7 @@ pico-sdk/src/rp2_common/hardware_pll/pll.s: pico-sdk/src/rp2_common/hardware_pll
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 pico-sdk/src/rp2_common/hardware_sync/sync.obj: pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -1093,6 +3418,7 @@ pico-sdk/src/rp2_common/hardware_sync/sync.obj: pico-sdk/src/rp2_common/hardware
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 pico-sdk/src/rp2_common/hardware_sync/sync.i: pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -1101,6 +3427,7 @@ pico-sdk/src/rp2_common/hardware_sync/sync.i: pico-sdk/src/rp2_common/hardware_s
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 pico-sdk/src/rp2_common/hardware_sync/sync.s: pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -1109,6 +3436,7 @@ pico-sdk/src/rp2_common/hardware_sync/sync.s: pico-sdk/src/rp2_common/hardware_s
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 pico-sdk/src/rp2_common/hardware_timer/timer.obj: pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -1117,6 +3445,7 @@ pico-sdk/src/rp2_common/hardware_timer/timer.obj: pico-sdk/src/rp2_common/hardwa
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 pico-sdk/src/rp2_common/hardware_timer/timer.i: pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -1125,6 +3454,7 @@ pico-sdk/src/rp2_common/hardware_timer/timer.i: pico-sdk/src/rp2_common/hardware
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 pico-sdk/src/rp2_common/hardware_timer/timer.s: pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -1133,6 +3463,7 @@ pico-sdk/src/rp2_common/hardware_timer/timer.s: pico-sdk/src/rp2_common/hardware
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 pico-sdk/src/rp2_common/hardware_uart/uart.obj: pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -1141,6 +3472,7 @@ pico-sdk/src/rp2_common/hardware_uart/uart.obj: pico-sdk/src/rp2_common/hardware
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 pico-sdk/src/rp2_common/hardware_uart/uart.i: pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -1149,6 +3481,7 @@ pico-sdk/src/rp2_common/hardware_uart/uart.i: pico-sdk/src/rp2_common/hardware_u
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 pico-sdk/src/rp2_common/hardware_uart/uart.s: pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -1157,6 +3490,7 @@ pico-sdk/src/rp2_common/hardware_uart/uart.s: pico-sdk/src/rp2_common/hardware_u
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -1165,6 +3499,7 @@ pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: pico-sdk/src/rp2_common/hardware
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 pico-sdk/src/rp2_common/hardware_vreg/vreg.i: pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -1173,6 +3508,7 @@ pico-sdk/src/rp2_common/hardware_vreg/vreg.i: pico-sdk/src/rp2_common/hardware_v
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 pico-sdk/src/rp2_common/hardware_vreg/vreg.s: pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -1181,6 +3517,7 @@ pico-sdk/src/rp2_common/hardware_vreg/vreg.s: pico-sdk/src/rp2_common/hardware_v
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -1189,6 +3526,7 @@ pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: pico-sdk/src/rp2_common/
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -1197,6 +3535,7 @@ pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: pico-sdk/src/rp2_common/ha
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -1205,6 +3544,7 @@ pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: pico-sdk/src/rp2_common/ha
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -1213,6 +3553,7 @@ pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: pico-sdk/src/rp2_common/hardware
 # target to build an object file
 pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 pico-sdk/src/rp2_common/hardware_xosc/xosc.i: pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -1221,6 +3562,7 @@ pico-sdk/src/rp2_common/hardware_xosc/xosc.i: pico-sdk/src/rp2_common/hardware_x
 # target to preprocess a source file
 pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 pico-sdk/src/rp2_common/hardware_xosc/xosc.s: pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -1229,7 +3571,56 @@ pico-sdk/src/rp2_common/hardware_xosc/xosc.s: pico-sdk/src/rp2_common/hardware_x
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+
+pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj: pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.obj
+
+pico-sdk/src/rp2_common/pico_async_context/async_context_base.i: pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.i
+
+pico-sdk/src/rp2_common/pico_async_context/async_context_base.s: pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_base.c.s
+
+pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj: pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.obj
+
+pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i: pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.i
+
+pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s: pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.c.s
 
 pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj
@@ -1237,6 +3628,7 @@ pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: pico-sdk/src/rp2_common/
 # target to build an object file
 pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -1245,6 +3637,7 @@ pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: pico-sdk/src/rp2_common/pico_b
 # target to build an object file
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -1253,6 +3646,7 @@ pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: pico-sdk/src/rp2_common/pico_boo
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -1261,7 +3655,200 @@ pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: pico-sdk/src/rp2_common/pico_boo
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s: pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.c.s
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.obj
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.i
+
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s: pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.c.s
 
 pico-sdk/src/rp2_common/pico_divider/divider.obj: pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_divider/divider.obj
@@ -1269,6 +3856,7 @@ pico-sdk/src/rp2_common/pico_divider/divider.obj: pico-sdk/src/rp2_common/pico_d
 # target to build an object file
 pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -1277,6 +3865,7 @@ pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: pico-sdk/src/rp2_common/pi
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -1285,6 +3874,7 @@ pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: pico-sdk/src/rp2_common
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 pico-sdk/src/rp2_common/pico_double/double_init_rom.i: pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -1293,6 +3883,7 @@ pico-sdk/src/rp2_common/pico_double/double_init_rom.i: pico-sdk/src/rp2_common/p
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 pico-sdk/src/rp2_common/pico_double/double_init_rom.s: pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -1301,6 +3892,7 @@ pico-sdk/src/rp2_common/pico_double/double_init_rom.s: pico-sdk/src/rp2_common/p
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 pico-sdk/src/rp2_common/pico_double/double_math.obj: pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -1309,6 +3901,7 @@ pico-sdk/src/rp2_common/pico_double/double_math.obj: pico-sdk/src/rp2_common/pic
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 pico-sdk/src/rp2_common/pico_double/double_math.i: pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -1317,6 +3910,7 @@ pico-sdk/src/rp2_common/pico_double/double_math.i: pico-sdk/src/rp2_common/pico_
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_double/double_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 pico-sdk/src/rp2_common/pico_double/double_math.s: pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -1325,6 +3919,7 @@ pico-sdk/src/rp2_common/pico_double/double_math.s: pico-sdk/src/rp2_common/pico_
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_double/double_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -1333,6 +3928,7 @@ pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: pico-sdk/src/rp2_com
 # target to build an object file
 pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.obj: pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
@@ -1341,6 +3937,7 @@ pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device
 # target to build an object file
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.i: pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
@@ -1349,6 +3946,7 @@ pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.i
 
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.s: pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
@@ -1357,6 +3955,7 @@ pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.s
 
 pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -1365,6 +3964,7 @@ pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: pico-sdk/src/rp2_common/pico
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -1373,6 +3973,7 @@ pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: pico-sdk/src/rp2_common/p
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 pico-sdk/src/rp2_common/pico_float/float_init_rom.i: pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -1381,6 +3982,7 @@ pico-sdk/src/rp2_common/pico_float/float_init_rom.i: pico-sdk/src/rp2_common/pic
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 pico-sdk/src/rp2_common/pico_float/float_init_rom.s: pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -1389,6 +3991,7 @@ pico-sdk/src/rp2_common/pico_float/float_init_rom.s: pico-sdk/src/rp2_common/pic
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 pico-sdk/src/rp2_common/pico_float/float_math.obj: pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -1397,6 +4000,7 @@ pico-sdk/src/rp2_common/pico_float/float_math.obj: pico-sdk/src/rp2_common/pico_
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 pico-sdk/src/rp2_common/pico_float/float_math.i: pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -1405,6 +4009,7 @@ pico-sdk/src/rp2_common/pico_float/float_math.i: pico-sdk/src/rp2_common/pico_fl
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_float/float_math.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 pico-sdk/src/rp2_common/pico_float/float_math.s: pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -1413,6 +4018,7 @@ pico-sdk/src/rp2_common/pico_float/float_math.s: pico-sdk/src/rp2_common/pico_fl
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_float/float_math.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -1421,6 +4027,7 @@ pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: pico-sdk/src/rp2_commo
 # target to build an object file
 pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -1429,7 +4036,32 @@ pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: pico-sdk/src/rp
 # target to build an object file
 pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+
+pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj: pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.obj
+
+pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i: pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.i
+
+pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.s: pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.c.s
 
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj
@@ -1437,6 +4069,7 @@ pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: pico-sdk/src/rp2_common/pic
 # target to build an object file
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -1445,6 +4078,7 @@ pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: pico-sdk/src/rp2_common/pico_
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -1453,6 +4087,7 @@ pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: pico-sdk/src/rp2_common/pico_
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -1461,6 +4096,7 @@ pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: pico-sdk/src/rp2_common/
 # target to build an object file
 pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 
 pico-sdk/src/rp2_common/pico_platform/platform.obj: pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -1469,6 +4105,7 @@ pico-sdk/src/rp2_common/pico_platform/platform.obj: pico-sdk/src/rp2_common/pico
 # target to build an object file
 pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 pico-sdk/src/rp2_common/pico_platform/platform.i: pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -1477,6 +4114,7 @@ pico-sdk/src/rp2_common/pico_platform/platform.i: pico-sdk/src/rp2_common/pico_p
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_platform/platform.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 pico-sdk/src/rp2_common/pico_platform/platform.s: pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -1485,6 +4123,7 @@ pico-sdk/src/rp2_common/pico_platform/platform.s: pico-sdk/src/rp2_common/pico_p
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_platform/platform.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 pico-sdk/src/rp2_common/pico_printf/printf.obj: pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -1493,6 +4132,7 @@ pico-sdk/src/rp2_common/pico_printf/printf.obj: pico-sdk/src/rp2_common/pico_pri
 # target to build an object file
 pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 pico-sdk/src/rp2_common/pico_printf/printf.i: pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -1501,6 +4141,7 @@ pico-sdk/src/rp2_common/pico_printf/printf.i: pico-sdk/src/rp2_common/pico_print
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_printf/printf.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 pico-sdk/src/rp2_common/pico_printf/printf.s: pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -1509,7 +4150,32 @@ pico-sdk/src/rp2_common/pico_printf/printf.s: pico-sdk/src/rp2_common/pico_print
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_printf/printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_printf/printf.c.s
+
+pico-sdk/src/rp2_common/pico_rand/rand.obj: pico-sdk/src/rp2_common/pico_rand/rand.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_rand/rand.obj
+
+# target to build an object file
+pico-sdk/src/rp2_common/pico_rand/rand.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_rand/rand.c.obj
+.PHONY : pico-sdk/src/rp2_common/pico_rand/rand.c.obj
+
+pico-sdk/src/rp2_common/pico_rand/rand.i: pico-sdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_rand/rand.i
+
+# target to preprocess a source file
+pico-sdk/src/rp2_common/pico_rand/rand.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_rand/rand.c.i
+.PHONY : pico-sdk/src/rp2_common/pico_rand/rand.c.i
+
+pico-sdk/src/rp2_common/pico_rand/rand.s: pico-sdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_rand/rand.s
+
+# target to generate assembly for a file
+pico-sdk/src/rp2_common/pico_rand/rand.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_rand/rand.c.s
+.PHONY : pico-sdk/src/rp2_common/pico_rand/rand.c.s
 
 pico-sdk/src/rp2_common/pico_runtime/runtime.obj: pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_runtime/runtime.obj
@@ -1517,6 +4183,7 @@ pico-sdk/src/rp2_common/pico_runtime/runtime.obj: pico-sdk/src/rp2_common/pico_r
 # target to build an object file
 pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 pico-sdk/src/rp2_common/pico_runtime/runtime.i: pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1525,6 +4192,7 @@ pico-sdk/src/rp2_common/pico_runtime/runtime.i: pico-sdk/src/rp2_common/pico_run
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 pico-sdk/src/rp2_common/pico_runtime/runtime.s: pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1533,6 +4201,7 @@ pico-sdk/src/rp2_common/pico_runtime/runtime.s: pico-sdk/src/rp2_common/pico_run
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1541,6 +4210,7 @@ pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: pico-sdk/src/rp2_com
 # target to build an object file
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1549,6 +4219,7 @@ pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: pico-sdk/src/rp2_commo
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1557,6 +4228,7 @@ pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: pico-sdk/src/rp2_commo
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1565,6 +4237,7 @@ pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: pico-sdk/src/rp2_common/pic
 # target to build an object file
 pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1573,6 +4246,7 @@ pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: pico-sdk/src/rp2_comm
 # target to build an object file
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1581,6 +4255,7 @@ pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: pico-sdk/src/rp2_common
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1589,6 +4264,7 @@ pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: pico-sdk/src/rp2_common
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 pico-sdk/src/rp2_common/pico_stdio/stdio.obj: pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1597,6 +4273,7 @@ pico-sdk/src/rp2_common/pico_stdio/stdio.obj: pico-sdk/src/rp2_common/pico_stdio
 # target to build an object file
 pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 pico-sdk/src/rp2_common/pico_stdio/stdio.i: pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1605,6 +4282,7 @@ pico-sdk/src/rp2_common/pico_stdio/stdio.i: pico-sdk/src/rp2_common/pico_stdio/s
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 pico-sdk/src/rp2_common/pico_stdio/stdio.s: pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1613,6 +4291,7 @@ pico-sdk/src/rp2_common/pico_stdio/stdio.s: pico-sdk/src/rp2_common/pico_stdio/s
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
@@ -1621,6 +4300,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.obj: pico-sdk/src/rp2_com
 # target to build an object file
 pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
 
 pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
@@ -1629,6 +4309,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.i: pico-sdk/src/rp2_commo
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.i
 
 pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
@@ -1637,6 +4318,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.s: pico-sdk/src/rp2_commo
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.s
 
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
@@ -1645,6 +4327,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.obj: pico-sdk/src/rp2_common/pi
 # target to build an object file
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
 
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
@@ -1653,6 +4336,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.i: pico-sdk/src/rp2_common/pico
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.i
 
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
@@ -1661,6 +4345,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.s: pico-sdk/src/rp2_common/pico
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.s
 
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
@@ -1669,6 +4354,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.obj: pico-sdk/src/r
 # target to build an object file
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
 
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
@@ -1677,6 +4363,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.i: pico-sdk/src/rp2
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.i
 
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
@@ -1685,6 +4372,7 @@ pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.s: pico-sdk/src/rp2
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.s
 
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1693,6 +4381,7 @@ pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: pico-sdk/src/rp2_common/pico_std
 # target to build an object file
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1701,6 +4390,7 @@ pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: pico-sdk/src/rp2_common/pico_stdli
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1709,6 +4399,7 @@ pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: pico-sdk/src/rp2_common/pico_stdli
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
@@ -1717,6 +4408,7 @@ pico-sdk/src/rp2_common/pico_unique_id/unique_id.obj: pico-sdk/src/rp2_common/pi
 # target to build an object file
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 .PHONY : pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
 
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
@@ -1725,6 +4417,7 @@ pico-sdk/src/rp2_common/pico_unique_id/unique_id.i: pico-sdk/src/rp2_common/pico
 # target to preprocess a source file
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 .PHONY : pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.i
 
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
@@ -1733,6 +4426,7 @@ pico-sdk/src/rp2_common/pico_unique_id/unique_id.s: pico-sdk/src/rp2_common/pico
 # target to generate assembly for a file
 pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dht.dir/build.make CMakeFiles/dht.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/udp.dir/build.make CMakeFiles/udp.dir/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 .PHONY : pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.s
 
 # Help Target
@@ -1750,9 +4444,280 @@ help:
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... bs2_default"
 	@echo "... dht"
+	@echo "... udp"
 	@echo "... include/DHT20-Pico/DHT20.obj"
 	@echo "... include/DHT20-Pico/DHT20.i"
 	@echo "... include/DHT20-Pico/DHT20.s"
+	@echo "... include/udpBeacon/udpBeacon.obj"
+	@echo "... include/udpBeacon/udpBeacon.i"
+	@echo "... include/udpBeacon/udpBeacon.s"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.obj"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.i"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ctrl.s"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ll.obj"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ll.i"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_ll.s"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_lwip.obj"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_lwip.i"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_lwip.s"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_stats.obj"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_stats.i"
+	@echo "... pico-sdk/lib/cyw43-driver/src/cyw43_stats.s"
+	@echo "... pico-sdk/lib/lwip/src/api/api_lib.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/api_lib.i"
+	@echo "... pico-sdk/lib/lwip/src/api/api_lib.s"
+	@echo "... pico-sdk/lib/lwip/src/api/api_msg.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/api_msg.i"
+	@echo "... pico-sdk/lib/lwip/src/api/api_msg.s"
+	@echo "... pico-sdk/lib/lwip/src/api/err.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/err.i"
+	@echo "... pico-sdk/lib/lwip/src/api/err.s"
+	@echo "... pico-sdk/lib/lwip/src/api/if_api.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/if_api.i"
+	@echo "... pico-sdk/lib/lwip/src/api/if_api.s"
+	@echo "... pico-sdk/lib/lwip/src/api/netbuf.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/netbuf.i"
+	@echo "... pico-sdk/lib/lwip/src/api/netbuf.s"
+	@echo "... pico-sdk/lib/lwip/src/api/netdb.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/netdb.i"
+	@echo "... pico-sdk/lib/lwip/src/api/netdb.s"
+	@echo "... pico-sdk/lib/lwip/src/api/netifapi.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/netifapi.i"
+	@echo "... pico-sdk/lib/lwip/src/api/netifapi.s"
+	@echo "... pico-sdk/lib/lwip/src/api/sockets.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/sockets.i"
+	@echo "... pico-sdk/lib/lwip/src/api/sockets.s"
+	@echo "... pico-sdk/lib/lwip/src/api/tcpip.obj"
+	@echo "... pico-sdk/lib/lwip/src/api/tcpip.i"
+	@echo "... pico-sdk/lib/lwip/src/api/tcpip.s"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp_alloc.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp_alloc.i"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp_alloc.s"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp_tcp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp_tcp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/altcp_tcp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/def.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/def.i"
+	@echo "... pico-sdk/lib/lwip/src/core/def.s"
+	@echo "... pico-sdk/lib/lwip/src/core/dns.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/dns.i"
+	@echo "... pico-sdk/lib/lwip/src/core/dns.s"
+	@echo "... pico-sdk/lib/lwip/src/core/inet_chksum.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/inet_chksum.i"
+	@echo "... pico-sdk/lib/lwip/src/core/inet_chksum.s"
+	@echo "... pico-sdk/lib/lwip/src/core/init.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/init.i"
+	@echo "... pico-sdk/lib/lwip/src/core/init.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ip.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ip.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ip.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/acd.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/acd.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/acd.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/autoip.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/autoip.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/autoip.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/dhcp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/dhcp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/dhcp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/etharp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/etharp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/etharp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/icmp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/icmp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/icmp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/igmp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/igmp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/igmp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4_addr.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv4/ip4_frag.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/dhcp6.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/dhcp6.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/dhcp6.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ethip6.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ethip6.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ethip6.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/icmp6.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/icmp6.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/icmp6.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/inet6.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/inet6.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/inet6.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6_addr.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/ip6_frag.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/mld6.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/mld6.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/mld6.s"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/nd6.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/nd6.i"
+	@echo "... pico-sdk/lib/lwip/src/core/ipv6/nd6.s"
+	@echo "... pico-sdk/lib/lwip/src/core/mem.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/mem.i"
+	@echo "... pico-sdk/lib/lwip/src/core/mem.s"
+	@echo "... pico-sdk/lib/lwip/src/core/memp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/memp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/memp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/netif.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/netif.i"
+	@echo "... pico-sdk/lib/lwip/src/core/netif.s"
+	@echo "... pico-sdk/lib/lwip/src/core/pbuf.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/pbuf.i"
+	@echo "... pico-sdk/lib/lwip/src/core/pbuf.s"
+	@echo "... pico-sdk/lib/lwip/src/core/raw.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/raw.i"
+	@echo "... pico-sdk/lib/lwip/src/core/raw.s"
+	@echo "... pico-sdk/lib/lwip/src/core/stats.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/stats.i"
+	@echo "... pico-sdk/lib/lwip/src/core/stats.s"
+	@echo "... pico-sdk/lib/lwip/src/core/sys.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/sys.i"
+	@echo "... pico-sdk/lib/lwip/src/core/sys.s"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp.s"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp_in.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp_in.i"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp_in.s"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp_out.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp_out.i"
+	@echo "... pico-sdk/lib/lwip/src/core/tcp_out.s"
+	@echo "... pico-sdk/lib/lwip/src/core/timeouts.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/timeouts.i"
+	@echo "... pico-sdk/lib/lwip/src/core/timeouts.s"
+	@echo "... pico-sdk/lib/lwip/src/core/udp.obj"
+	@echo "... pico-sdk/lib/lwip/src/core/udp.i"
+	@echo "... pico-sdk/lib/lwip/src/core/udp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/bridgeif.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/bridgeif.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/bridgeif.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/bridgeif_fdb.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/bridgeif_fdb.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/bridgeif_fdb.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ethernet.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ethernet.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ethernet.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6_ble.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6_ble.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6_ble.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6_common.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6_common.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/lowpan6_common.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/auth.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/auth.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/auth.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ccp.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ccp.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ccp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap-md5.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap-md5.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap-md5.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap-new.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap-new.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap-new.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap_ms.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap_ms.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/chap_ms.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/demand.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/demand.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/demand.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/eap.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/eap.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/eap.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ecp.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ecp.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ecp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/eui64.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/eui64.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/eui64.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/fsm.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/fsm.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/fsm.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ipcp.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ipcp.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ipcp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ipv6cp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/lcp.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/lcp.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/lcp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/magic.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/magic.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/magic.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/mppe.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/mppe.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/mppe.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/multilink.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/multilink.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/multilink.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/arc4.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/des.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/md4.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/md5.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/polarssl/sha1.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ppp.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ppp.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/ppp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppapi.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppapi.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppapi.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppcrypt.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppoe.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppoe.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppoe.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppol2tp.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppos.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppos.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/pppos.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/upap.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/upap.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/upap.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/utils.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/utils.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/utils.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/vj.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/vj.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/ppp/vj.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/slipif.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/slipif.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/slipif.s"
+	@echo "... pico-sdk/lib/lwip/src/netif/zepif.obj"
+	@echo "... pico-sdk/lib/lwip/src/netif/zepif.i"
+	@echo "... pico-sdk/lib/lwip/src/netif/zepif.s"
 	@echo "... pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"
 	@echo "... pico-sdk/lib/tinyusb/src/class/audio/audio_device.s"
@@ -1834,9 +4799,6 @@ help:
 	@echo "... pico-sdk/src/common/pico_util/queue.obj"
 	@echo "... pico-sdk/src/common/pico_util/queue.i"
 	@echo "... pico-sdk/src/common/pico_util/queue.s"
-	@echo "... pico-sdk/src/rp2_common/hardware_adc/adc.obj"
-	@echo "... pico-sdk/src/rp2_common/hardware_adc/adc.i"
-	@echo "... pico-sdk/src/rp2_common/hardware_adc/adc.s"
 	@echo "... pico-sdk/src/rp2_common/hardware_claim/claim.obj"
 	@echo "... pico-sdk/src/rp2_common/hardware_claim/claim.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_claim/claim.s"
@@ -1844,6 +4806,12 @@ help:
 	@echo "... pico-sdk/src/rp2_common/hardware_clocks/clocks.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_clocks/clocks.s"
 	@echo "... pico-sdk/src/rp2_common/hardware_divider/divider.obj"
+	@echo "... pico-sdk/src/rp2_common/hardware_dma/dma.obj"
+	@echo "... pico-sdk/src/rp2_common/hardware_dma/dma.i"
+	@echo "... pico-sdk/src/rp2_common/hardware_dma/dma.s"
+	@echo "... pico-sdk/src/rp2_common/hardware_exception/exception.obj"
+	@echo "... pico-sdk/src/rp2_common/hardware_exception/exception.i"
+	@echo "... pico-sdk/src/rp2_common/hardware_exception/exception.s"
 	@echo "... pico-sdk/src/rp2_common/hardware_flash/flash.obj"
 	@echo "... pico-sdk/src/rp2_common/hardware_flash/flash.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_flash/flash.s"
@@ -1857,6 +4825,9 @@ help:
 	@echo "... pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... pico-sdk/src/rp2_common/hardware_pio/pio.obj"
+	@echo "... pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_pll/pll.s"
@@ -1878,10 +4849,40 @@ help:
 	@echo "... pico-sdk/src/rp2_common/hardware_xosc/xosc.obj"
 	@echo "... pico-sdk/src/rp2_common/hardware_xosc/xosc.i"
 	@echo "... pico-sdk/src/rp2_common/hardware_xosc/xosc.s"
+	@echo "... pico-sdk/src/rp2_common/pico_async_context/async_context_base.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_async_context/async_context_base.i"
+	@echo "... pico-sdk/src/rp2_common/pico_async_context/async_context_base.s"
+	@echo "... pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.i"
+	@echo "... pico-sdk/src/rp2_common/pico_async_context/async_context_threadsafe_background.s"
 	@echo "... pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_bootrom/bootrom.i"
 	@echo "... pico-sdk/src/rp2_common/pico_bootrom/bootrom.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_freertos.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_poll.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_arch/cyw43_arch_threadsafe_background.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cybt_shared_bus/cybt_shared_bus_driver.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_bus_pio_spi.s"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.i"
+	@echo "... pico-sdk/src/rp2_common/pico_cyw43_driver/cyw43_driver.s"
 	@echo "... pico-sdk/src/rp2_common/pico_divider/divider.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_double/double_aeabi.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_double/double_init_rom.obj"
@@ -1903,6 +4904,9 @@ help:
 	@echo "... pico-sdk/src/rp2_common/pico_float/float_math.s"
 	@echo "... pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.i"
+	@echo "... pico-sdk/src/rp2_common/pico_lwip/lwip_nosys.s"
 	@echo "... pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
@@ -1913,6 +4917,9 @@ help:
 	@echo "... pico-sdk/src/rp2_common/pico_printf/printf.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_printf/printf.i"
 	@echo "... pico-sdk/src/rp2_common/pico_printf/printf.s"
+	@echo "... pico-sdk/src/rp2_common/pico_rand/rand.obj"
+	@echo "... pico-sdk/src/rp2_common/pico_rand/rand.i"
+	@echo "... pico-sdk/src/rp2_common/pico_rand/rand.s"
 	@echo "... pico-sdk/src/rp2_common/pico_runtime/runtime.obj"
 	@echo "... pico-sdk/src/rp2_common/pico_runtime/runtime.i"
 	@echo "... pico-sdk/src/rp2_common/pico_runtime/runtime.s"
