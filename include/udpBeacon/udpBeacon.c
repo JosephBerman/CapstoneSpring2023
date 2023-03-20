@@ -3,40 +3,9 @@
 //
 #include "udpBeacon.h"
 
-struct Server{
-    struct udp_pcb* pcb;
-    ip_addr_t addr;
-    void (*run_server)();
-};
 
-//Created and binds pi pico to port (default 4444) and inits the struct
-Server *create_server(const char *address, void * run_function){
 
-    Server* srv = malloc(sizeof(*srv));
 
-    srv->run_server = run_function;
-    srv->pcb = udp_new();
-    ipaddr_aton(address,&srv->addr);
-
-    ip_addr_t broadcastNetwork;
-    ipaddr_aton("255.255.255.255", &broadcastNetwork);
-
-    if(ERR_OK != udp_bind(srv->pcb,&srv->addr, DEFAULT_UDP_PORT)){
-        printf("Error binding to port");
-        sleep_ms(1000);
-        return -1;
-    }
-    udp_connect(srv->pcb,  &broadcastNetwork, DEFAULT_UDP_PORT);
-
-    printf("Starting server at %s on port %u\n", ip4addr_ntoa(netif_ip4_addr(netif_list)), DEFAULT_UDP_PORT);
-    sleep_ms(1000);
-
-    return srv;
-}
-
-void cleanup_server(Server* server){
-    free(server);
-}
 
 
 void run_server(Server* srv){
@@ -63,7 +32,7 @@ void run_server(Server* srv){
     }
     return;
 }
-
+//
 //int main(){
 //
 //    stdio_init_all();

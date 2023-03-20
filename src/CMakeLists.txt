@@ -12,7 +12,13 @@ target_compile_definitions(threading PRIVATE
         SSID="${SSID}"
         PASS="${PASS}")
 
-target_link_libraries(threading dht udp pico_stdlib hardware_i2c pico_multicore pico_cyw43_arch_lwip_threadsafe_background)
+
+target_link_libraries(threading dht
+                    udp
+                    pico_stdlib
+                    hardware_i2c
+                    pico_multicore
+                    pico_cyw43_arch_lwip_threadsafe_background)
 
 
 target_include_directories(threading PRIVATE
