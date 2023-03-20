@@ -12,24 +12,24 @@ struct Server{
 //Created and binds pi pico to port (default 4444) and inits the struct
 Server *create_server(const char *address, void * run_function){
 
-
-
     Server* srv = malloc(sizeof(*srv));
 
     srv->run_server = run_function;
     srv->pcb = udp_new();
     ipaddr_aton(address,&srv->addr);
 
+    ip_addr_t broadcastNetwork;
+    ipaddr_aton("255.255.255.255", &broadcastNetwork);
 
-    if(ERR_OK != udp_bind(srv->pcb, &srv->addr, DEFAULT_UDP_PORT)){
+    if(ERR_OK != udp_bind(srv->pcb,&srv->addr, DEFAULT_UDP_PORT)){
         printf("Error binding to port");
         sleep_ms(1000);
         return -1;
     }
-    udp_connect(srv->pcb, &srv->addr, DEFAULT_UDP_PORT);
+    udp_connect(srv->pcb,  &broadcastNetwork, DEFAULT_UDP_PORT);
 
     printf("Starting server at %s on port %u\n", ip4addr_ntoa(netif_ip4_addr(netif_list)), DEFAULT_UDP_PORT);
-        sleep_ms(1000);
+    sleep_ms(1000);
 
     return srv;
 }
@@ -49,19 +49,17 @@ void run_server(Server* srv){
         printf("buffer %s\n", dataBuf->payload);
         err_t error = udp_send(srv->pcb, dataBuf);
         pbuf_free(dataBuf);
-
         if (error != ERR_OK) {
-            printf("error=%d\n", error);
+            if(error == ERR_USE){
+                printf("Port alraedy in use");
+            }else{
+                printf("error=%d\n", error);
+            }
         } else {
             printf("sent: %s\n", counter);
             counter[0] = counter[0] + 1;
-
         }
-
-
-        sleep_ms(1000);
-
-
+        sleep_ms(2000);
     }
     return;
 }
@@ -76,7 +74,6 @@ int main(){
 
     uint8_t counter = 0;
     while(cyw43_arch_wifi_connect_timeout_ms(SSID, PASS, CYW43_AUTH_WPA2_AES_PSK, 30000)) {
-
         if(counter >= 10){
             printf("tried 10+ times, failed");
             sleep_ms(200);
@@ -85,11 +82,9 @@ int main(){
 
         sleep_ms(500);
         counter++;
-
     }
 
-    Server *udpServer  = create_server("0.0.0.0", run_server);
-
+    Server *udpServer  = create_server("192.168.69.246", run_server);
 
     udpServer->run_server(udpServer);
     cyw43_arch_deinit();
