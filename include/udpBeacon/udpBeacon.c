@@ -64,29 +64,29 @@ void run_server(Server* srv){
     return;
 }
 
-int main(){
-
-    stdio_init_all();
-    if (cyw43_arch_init()) {
-        return -1;
-    }
-    cyw43_arch_enable_sta_mode();
-
-    uint8_t counter = 0;
-    while(cyw43_arch_wifi_connect_timeout_ms(SSID, PASS, CYW43_AUTH_WPA2_AES_PSK, 30000)) {
-        if(counter >= 10){
-            printf("tried 10+ times, failed");
-            sleep_ms(200);
-        }
-        printf("Failed to connect, retrying %d\n", counter);
-
-        sleep_ms(500);
-        counter++;
-    }
-
-    Server *udpServer  = create_server("192.168.69.246", run_server);
-
-    udpServer->run_server(udpServer);
-    cyw43_arch_deinit();
-    return 0;
-}
+//int main(){
+//
+//    stdio_init_all();
+//    if (cyw43_arch_init()) {
+//        return -1;
+//    }
+//    cyw43_arch_enable_sta_mode();
+//
+//    uint8_t counter = 0;
+//    while(cyw43_arch_wifi_connect_timeout_ms(SSID, PASS, CYW43_AUTH_WPA2_AES_PSK, 30000)) {
+//        if(counter >= 10){
+//            printf("tried 10+ times, failed");
+//            sleep_ms(200);
+//        }
+//        printf("Failed to connect, retrying %d\n", counter);
+//
+//        sleep_ms(500);
+//        counter++;
+//    }
+//
+//    Server *udpServer  = create_server("192.168.69.246", run_server);
+//
+//    udpServer->run_server(udpServer);
+//    cyw43_arch_deinit();
+//    return 0;
+//}
