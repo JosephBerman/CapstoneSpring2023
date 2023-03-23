@@ -1,10 +1,5 @@
-
-
-
-
 add_executable(threading
         main.cpp
-
         )
 
 
@@ -13,7 +8,8 @@ target_compile_definitions(threading PRIVATE
         PASS="${PASS}")
 
 
-target_link_libraries(threading dht
+target_link_libraries(threading sgp
+                    dht
                     udp
                     pico_stdlib
                     hardware_i2c
@@ -23,9 +19,6 @@ target_link_libraries(threading dht
 
 target_include_directories(threading PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
-        ${CMAKE_CURRENT_LIST_DIR}/include/DHT20-Pico
-        ${CMAKE_CURRENT_LIST_DIR}/include/udpBeacon
-
         )
 
 

@@ -5,3 +5,6 @@
 [submodule "include/DHT20-Pico"]
 	path = include/DHT20-Pico
 	url = git@github.com:JosephBerman/DHT20-Pico.git
+[submodule "include/SGP40-Pico"]
+	path = include/SGP40-Pico
+	url = git@github.com:JosephBerman/SGP40-Pico.git

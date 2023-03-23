@@ -3,6 +3,8 @@
 //
 #include "../include/udpBeacon/udpBeacon.h"
 #include "../include/DHT20-Pico/DHT20.h"
+#include "../include/SGP40-Pico/SGP40.h"
+#include "../include/SGP40-Pico/gas-index-algorithm/sensirion_gas_index_algorithm.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -20,26 +22,38 @@ void data_core1(){
 
 
 
-    DHT20 sensor = DHT20(8,9);
-    printf("created sensor\n");
+    SGP40 sgp = SGP40(8,9);
 
-    sensor.intializeRegisters();
+    DHT20 dht = DHT20(8,9);
+    sleep_ms(100);
+
+
+    printf("created sensors\n");
+
+    dht.intializeRegisters();
     printf("init registers\n");
     sleep_ms(100);
-    while(!sensor.isReady()){
+    SGP_Data sgpData;
 
-        printf("sensor is not ready waiting 50ms");
-        sleep_ms(50);
+
+    while(!dht.isReady()){
+
+        printf("sensor is not ready waiting 50ms\n");
+        sgp.getData(sgpData);
+        printf("getting data:  raw: %d, voc %d \n",sgpData.voc_raw, sgpData.voc_index);
+
+        sleep_ms(100);
     }
 
-    DHT_Data data;
-
+    DHT_Data dataDHT;
     while(true) {
 
-        sensor.getData(data);
-        printf("getting data\n");
+        dht.getData(dataDHT);
+        sgp.getData(sgpData);
+        printf("getting data: temp: %f, humid: %f, raw: %d, voc %d \n", dataDHT.tempature, dataDHT.humidity, sgpData.voc_raw, sgpData.voc_index);
+
         sleep_ms(1000);
-        queue_add_blocking(&dht_queue, &data);
+        queue_add_blocking(&dht_queue, &dataDHT);
         printf("added data to queue\n");
         sleep_ms(1000);
     }
@@ -76,7 +90,7 @@ void run_server(Server* srv){
                 printf("error=%d\n", error);
             }
         } else {
-            printf(udpMessage);
+
         }
         sleep_ms(1000);
     }
@@ -117,13 +131,7 @@ int main(){
     multicore_launch_core1(data_core1);
 
     udpServer->run_server(udpServer);
-
-
-
-
-
-
-
+    
     cyw43_arch_deinit();
 
     return 0;
