@@ -8,3 +8,6 @@
 [submodule "include/SGP40-Pico"]
 	path = include/SGP40-Pico
 	url = git@github.com:JosephBerman/SGP40-Pico.git
+[submodule "include/mlx90640-RPI-Pico"]
+	path = include/mlx90640-RPI-Pico
+	url = https://github.com/VianPatel/mlx90640-RPI-Pico.git

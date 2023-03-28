@@ -13,11 +13,13 @@ pico_sdk_init()
 include_directories(include/DHT20-Pico)
 include_directories(include/udpBeacon)
 include_directories(include/SGP40-Pico)
+include_directories(include/mlx90640-RPI-Pico)
 
 
 add_subdirectory(include/DHT20-Pico)
 add_subdirectory(include/udpBeacon)
 add_subdirectory(include/SGP40-Pico)
+add_subdirectory(include/mlx90640-RPI-Pico)
 add_subdirectory(src)
 
 
