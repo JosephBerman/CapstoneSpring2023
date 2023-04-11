@@ -11,3 +11,6 @@
 [submodule "include/mlx90640-RPI-Pico"]
 	path = include/mlx90640-RPI-Pico
 	url = https://github.com/VianPatel/mlx90640-RPI-Pico.git
+[submodule "include/Grove-MultiGas-Pico"]
+	path = include/Grove-MultiGas-Pico
+	url = git@github.com:JosephBerman/Grove-MultiGas-Pico.git

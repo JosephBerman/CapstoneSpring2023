@@ -3,18 +3,22 @@ add_executable(threading
         )
 
 
+
+
 target_compile_definitions(threading PRIVATE
-        SSID="${SSID}"
-        PASS="${PASS}")
+        SSID="$ENV{SSID}"
+        PASS="$ENV{PASS}")
+
+
 
 
 target_link_libraries(threading sgp
-                    dht
-                    udp
-                    pico_stdlib
-                    hardware_i2c
-                    pico_multicore
-                    pico_cyw43_arch_lwip_threadsafe_background)
+        dht
+        udp
+        pico_stdlib
+        hardware_i2c
+        pico_multicore
+        pico_cyw43_arch_lwip_threadsafe_background)
 
 
 target_include_directories(threading PRIVATE

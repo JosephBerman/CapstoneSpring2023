@@ -6,9 +6,9 @@ add_library(udp STATIC
         )
 
 
-#target_compile_definitions(udp PRIVATE
-#        SSID="${SSID}"
-#        PASS="${PASS}")
+target_compile_definitions(udp PRIVATE
+        SSID="${SSID}"
+        PASS="${PASS}")
 
 target_link_libraries(udp pico_stdlib hardware_i2c pico_cyw43_arch_lwip_threadsafe_background)
 
